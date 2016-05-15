@@ -4,7 +4,7 @@ mongoose = require('mongoose'),
 bodyParser = require('body-parser');
 student = require('./app/server/Student');
 
-mongoose.connect('mongodb://root:F3y1BxsNXogD@ec2-52-90-174-184.compute-1.amazonaws.com:27017/test');
+mongoose.connect('mongodb://root:F3y1BxsNXogD@localhost:27017/test');
 app.use(bodyParser());
 
 app.get('/', function(req, res){
